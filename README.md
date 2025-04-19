@@ -1,4 +1,4 @@
-# project1_sql_transactions
+# SQL1_retail_transactions
 This is my first project on Github and I'll be using SQL to exlore and clean retail sales for a shop.
 I first turned the Excel file from CSV to SQL using a website converter. 
 
