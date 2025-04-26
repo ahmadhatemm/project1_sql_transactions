@@ -2,13 +2,13 @@
 This is my first project on Github and I'll be using SQL to exlore and clean retail sales for a shop.
 I first turned the Excel file from CSV to SQL using a website converter. 
 
--- CLeaning
+# CLeaning
 I counted the data to make sure nothing is missing and compared it by Excel tables count which is 2000.
 Checking if any of the columns are null and found three rows with ID: 679, 746 and 1225 are null, so I'm going to delete them and final count is 2000. Wanted to count number of custormers and sales using SELECT COUNT() function.
 
 Questions:
 -- Q.1 Write a SQL query to retrieve all columns for sales made on '2022-11-05
-
+```sql
 SELECT * FROM mytable WHERE sale_date = '2022-11-05';
 
 -- Q.2 Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 3 in the month of Nov-2022
@@ -62,7 +62,7 @@ LIMIT 5;
 SELECT COUNT(DISTINCT customer_id), category FROM mytable
 GROUP by category
 
--- Q.10 Write a SQL query to create each shift and number of orders (Example Morning <=12, Afternoon Between 12 & 17, Evening >17)
+ Q.10 Write a SQL query to create each shift and number of orders (Example Morning <=12, Afternoon Between 12 & 17, Evening >17)
 
 WITH hourly_sale as (
 SELECT *,
